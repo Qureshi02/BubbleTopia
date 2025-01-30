@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://cyskta85bnipr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x7qcg"]
+bg_color = Color(1.44392e-06, 0.578832, 0.583862, 1)
+border_width_top = 2
+border_color = Color(0, 0, 0, 1)
+
+[node name="HUD_Level2" type="CanvasLayer"]
+
+[node name="Panel" type="Panel" parent="."]
+texture_filter = 1
+offset_right = 1920.0
+offset_bottom = 56.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_x7qcg")
+
+[node name="LevelLabel" type="Label" parent="."]
+texture_filter = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -259.0
+offset_right = 259.0
+offset_bottom = 63.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 45
+text = "THE BUBBLE MAZE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1644, 29)
+scale = Vector2(0.6, 0.6)
